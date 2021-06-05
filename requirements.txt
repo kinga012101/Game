@@ -1,0 +1,2 @@
+# Packages used in the project and their versions
+pygame == 2.0.1
