@@ -17,8 +17,9 @@ def rotation(bird):
 
 def cretation():
     position= random.choice(pipe_height)
+    space = random.choice(space_between)
     bottom_pipe = pip_surface.get_rect(midtop = (300,position))
-    top_pipe = pip_surface.get_rect(midbottom = (300, position - 150))
+    top_pipe = pip_surface.get_rect(midbottom = (300, position - space))
     return bottom_pipe, top_pipe
 
 def showing_pipes(pipes):
@@ -72,9 +73,10 @@ if date.hour < 20 :
 else:
     pip_surface = pygame.image.load('assets/pipe-red.png').convert()
 pipes = []
-SPWAN = pygame.USEREVENT
-pygame.time.set_timer(SPWAN, 1000)
+SPAWN = pygame.USEREVENT
+pygame.time.set_timer(SPAWN, 1000)
 pipe_height = [200,300,400]
+space_between = [150,100,125]
 
 
 
@@ -84,7 +86,7 @@ while True:
             pygame.quit()
             sys.exit()
 
-        if event.type == SPWAN:
+        if event.type == SPAWN:
             pipes.extend(cretation())
 
     screen.blit(background, (0, 0))
