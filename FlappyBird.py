@@ -77,7 +77,7 @@ def check():
                 point.play()
                 achieve = False
             if i.centerx < 0:
-                achieve = False
+                achieve = True
 
 
 pygame.init()
