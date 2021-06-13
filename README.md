@@ -8,8 +8,8 @@ If you fly off the map or hit an obstacle, the game is over\
 ![Screenshot](assets\bird2.png)\
 ![Screenshot](assets\bird3.png)
 ### Technologies
-pygame - Library for creating Python games. It provides many modules that allow you to build a game from scratch
-pygame_menu - Thanks to this library, I was able to create a menu in a simple way
+**pygame** - Library for creating Python games. It provides many modules that allow you to build a game from scratch
+**pygame_menu** - Thanks to this library, I was able to create a menu in a simple way
 ### How to run this app?
 1. Clone the temple projet:\
 `git clone https://github.com/kinga012101/Game.git FlappyBird`\
